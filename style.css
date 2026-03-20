@@ -1,3 +1,9 @@
+:root {
+  --primary: #0b1f3a;   /* deep navy blue */
+  --secondary: #d4af37; /* gold */
+  --dark: #000000;
+  --light: #ffffff;
+}
 /* RESET */
 body {
   margin: 0;
@@ -9,7 +15,7 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background: black;
+  background: var(--primary);
   color: white;
   display: flex;
   align-items: center;
@@ -71,14 +77,12 @@ nav a:hover {
 }
 
 .trust {
-  font-size: 14px;
-  color: gold;
-  margin-bottom: 25px;
+  color: var(--secondary);
 }
 
 /* BUTTON */
 .btn {
-  background: gold;
+  background: var(--secondary);
   color: black;
   padding: 14px 30px;
   text-decoration: none;
@@ -89,7 +93,10 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: #d4af37;
+  background: #b8962e;
+}
+nav a:hover {
+  color: var(--secondary);
 }
 
 /* SECTIONS */
@@ -99,7 +106,7 @@ nav a:hover {
 }
 
 .dark {
-  background: #111;
+  background: var(--primary);
   color: white;
 }
 
@@ -118,8 +125,7 @@ nav a:hover {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: gold;
+  border-color: var(--secondary);
 }
 
 /* GALLERY */
@@ -155,4 +161,16 @@ nav a:hover {
 html, body {
   margin: 0;
   padding: 0;
+}
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--secondary);
+  display: block;
+  margin: 10px auto 0;
 }
