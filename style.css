@@ -184,7 +184,7 @@ h2::after {
 }
 .hero {
   position: relative;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
   background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') center/cover no-repeat;
 }
