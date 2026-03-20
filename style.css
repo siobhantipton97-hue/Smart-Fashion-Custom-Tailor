@@ -1,22 +1,48 @@
+/* ======================
+   ROOT COLOURS
+====================== */
 :root {
-  --primary: #0b1f3a;   /* deep navy blue */
-  --secondary: #d4af37; /* gold */
+  --primary: #0b1f3a;
+  --secondary: #d4af37;
   --dark: #000000;
   --light: #ffffff;
 }
-/* RESET */
-body {
+
+/* ======================
+   RESET
+====================== */
+html, body {
   margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   background: #fff;
+  scroll-behavior: smooth;
 }
 
-/* HEADINGS FONT */
+/* ======================
+   HEADINGS
+====================== */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
-/* HEADER */
+h2 {
+  position: relative;
+  font-size: 34px;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--secondary);
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* ======================
+   HEADER
+====================== */
 .header {
   position: sticky;
   top: 0;
@@ -26,7 +52,7 @@ h1, h2, h3 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  height: 80px; 
+  height: 80px;
   z-index: 1000;
 }
 
@@ -40,17 +66,23 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-  color: gold;
+  color: var(--secondary);
 }
 
-/* HERO */
+/* ======================
+   HERO (VIDEO FIXED)
+====================== */
 .hero {
   position: relative;
   height: 80vh;
+  min-height: 500px;
   overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') center/cover no-repeat;
 }
 
 .hero-video {
@@ -68,15 +100,22 @@ nav a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
   background: rgba(0,0,0,0.6);
+  z-index: 1;
 }
+
 .hero-content {
   position: relative;
   z-index: 2;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
 }
+
 .hero-content h2 {
-  font-size: 42px;
+  font-size: 48px;
   margin-bottom: 15px;
 }
 
@@ -88,9 +127,12 @@ nav a:hover {
 
 .trust {
   color: var(--secondary);
+  margin-bottom: 25px;
 }
 
-/* BUTTON */
+/* ======================
+   BUTTON
+====================== */
 .btn {
   background: var(--secondary);
   color: black;
@@ -105,14 +147,17 @@ nav a:hover {
 .btn:hover {
   background: #b8962e;
 }
-nav a:hover {
-  color: var(--secondary);
-}
 
-/* SECTIONS */
+/* ======================
+   SECTIONS
+====================== */
 .section {
   padding: 60px 20px;
   text-align: center;
+}
+
+.section p {
+  line-height: 1.6;
 }
 
 .dark {
@@ -120,14 +165,18 @@ nav a:hover {
   color: white;
 }
 
-/* GRID */
+/* ======================
+   GRID
+====================== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-/* CARDS */
+/* ======================
+   CARDS
+====================== */
 .card {
   padding: 20px;
   border: 1px solid #ddd;
@@ -136,9 +185,12 @@ nav a:hover {
 
 .card:hover {
   border-color: var(--secondary);
+  transform: translateY(-5px);
 }
 
-/* GALLERY */
+/* ======================
+   GALLERY
+====================== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -156,7 +208,9 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* WHATSAPP BUTTON */
+/* ======================
+   WHATSAPP BUTTON
+====================== */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -168,37 +222,20 @@ nav a:hover {
   text-decoration: none;
   font-weight: bold;
 }
-html, body {
-  margin: 0;
-  padding: 0;
-}
-h2 {
-  position: relative;
-}
 
-h2::after {
-  content: "";
-  width: 60px;
-  height: 3px;
-  background: var(--secondary);
-  display: block;
-  margin: 10px auto 0;
-}
-.section p {
-  line-height: 1.6;
-}
-.hero {
-  position: relative;
-  height: 80vh;
-  min-height: 500px;
-  overflow: hidden;
-  background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') center/cover no-repeat;
-}
+/* ======================
+   MOBILE OPTIMISATION
+====================== */
 @media (max-width: 768px) {
   .hero-video {
     display: none;
   }
-}
-html {
-  scroll-behavior: smooth;
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
 }
