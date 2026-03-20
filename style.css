@@ -182,3 +182,9 @@ h2::after {
 .section p {
   line-height: 1.6;
 }
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') center/cover no-repeat;
+}
