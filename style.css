@@ -10,11 +10,15 @@ body {
   background: black;
   color: white;
   display: flex;
+  align-items: center; /* ADD */
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 30px; /* reduce padding */
   z-index: 1000;
 }
 
+.logo {
+  height: 45px;
+}
 nav a {
   color: white;
   margin: 0 15px;
@@ -147,4 +151,10 @@ nav a {
 
 .btn:hover {
   background: #d4af37;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  padding-top: 80px; /* ADD THIS LINE */
 }
