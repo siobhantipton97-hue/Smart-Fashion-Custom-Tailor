@@ -51,7 +51,7 @@ h2::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 50px;
   height: 80px;
   z-index: 1000;
 }
@@ -63,12 +63,29 @@ h2::after {
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 18px;
   text-decoration: none;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
