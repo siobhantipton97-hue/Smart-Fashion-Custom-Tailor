@@ -94,3 +94,57 @@ nav a {
   border-radius: 50px;
   text-decoration: none;
 }
+/* HERO UPGRADE */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') center/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.trust {
+  font-size: 14px;
+  color: gold;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d4af37;
+}
