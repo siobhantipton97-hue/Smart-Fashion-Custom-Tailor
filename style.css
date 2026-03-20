@@ -3,7 +3,6 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: #fff;
-  padding-top: 80px;
 }
 
 /* HEADER */
@@ -16,11 +15,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
+  height: 80px; 
   z-index: 1000;
 }
 
 .logo {
-  height: 50px;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -151,4 +151,8 @@ nav a:hover {
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
+}
+html, body {
+  margin: 0;
+  padding: 0;
 }
