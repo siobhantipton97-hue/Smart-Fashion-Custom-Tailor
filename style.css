@@ -193,3 +193,6 @@ h2::after {
     display: none;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
