@@ -313,3 +313,6 @@ nav a:hover {
   opacity: 1;
   transform: translateY(-2px);
 }
+.socials {
+  margin-left: 20px;
+}
