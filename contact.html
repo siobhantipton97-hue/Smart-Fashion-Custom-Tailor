@@ -4,9 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Smart Fashion Custom Tailor Chiang Mai</title>
-  <meta name="description" content="Visit Smart Fashion Custom Tailor in Chiang Mai Night Bazaar. Contact us for custom suits, tailoring services, and appointments.">
+
+<meta name="description" content="Visit Smart Fashion Custom Tailor in Chiang Mai Night Bazaar. Contact us for custom suits, tailoring services, and appointments.">
+
 <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,28 +32,48 @@
   <p>📞 +66 83 636 7660</p>
   <p>✉ smartfashionchiangmai@gmail.com</p>
 
+  <!-- THAI ADDRESS -->
+  <p>
+    🇹🇭 <strong>ที่อยู่สำหรับแท็กซี่:</strong><br>
+    สมาร์ท แฟชั่น คัสตอม เทเลอร์<br>
+    ถนนช้างคลาน ใกล้ไนท์บาซาร์<br>
+    อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่
+  </p>
+
   <br>
 
-  <a href="https://wa.me/66836367660" class="btn">Chat on WhatsApp</a>
-<br><br>
-<a href="https://www.google.com/maps/search/?api=1&query=Smart+Fashion+Custom+Tailor+Chiang+Mai" 
-   target="_blank" 
-   class="btn">
-   Get Directions
-</a>
-  <div style="margin-top:30px;">
+  <!-- BUTTONS -->
+  <div style="margin-top:20px;">
+    <a href="https://wa.me/66836367660" class="btn">Chat on WhatsApp</a>
+    <br><br>
 
-  <h2>Opening Hours</h2>
+    <a href="https://www.google.com/maps/place/Smart+Fashion+Custom+Tailor+Chiang+Mai" 
+       target="_blank" 
+       class="btn">
+       View on Google Maps
+    </a>
+    <br><br>
 
-  <p><strong>Monday – Sunday:</strong> 10:00 AM – 10:00 PM</p>
+    <a href="#" class="btn" onclick="copyThaiAddress()">
+      📍 Copy Address for Taxi (Thai)
+    </a>
+  </div>
 
-  <h2 style="margin-top:30px;">Best Time to Visit</h2>
+  <!-- OPENING HOURS -->
+  <div style="margin-top:40px;">
 
-  <p>🧵 Morning (10am – 1pm): Best for fittings and relaxed service</p>
-  <p>🧵 Afternoon (1pm – 5pm): Ideal for consultations and fabric selection</p>
-  <p>🧵 Evening (5pm – 9pm): Busy time at Night Bazaar, great atmosphere</p>
+    <h2>Opening Hours</h2>
+    <p><strong>Monday – Sunday:</strong> 10:00 AM – 10:00 PM</p>
 
-</div>
+    <h2 style="margin-top:30px;">Best Time to Visit</h2>
+
+    <p>🧵 Morning (10am – 1pm): Best for fittings and relaxed service</p>
+    <p>🧵 Afternoon (1pm – 5pm): Ideal for consultations and fabric selection</p>
+    <p>🧵 Evening (5pm – 9pm): Busy time at Night Bazaar, great atmosphere</p>
+
+  </div>
+
+  <!-- MAP -->
   <iframe 
     src="https://www.google.com/maps?q=Smart+Fashion+Custom+Tailor+Chiang+Mai&output=embed"
     width="100%" 
@@ -59,12 +82,16 @@
     allowfullscreen=""
     loading="lazy">
   </iframe>
+
 </section>
+
+<!-- TAXI SECTION -->
 <section class="section dark">
   <h2>Show This to Your Taxi Driver</h2>
 
   <p>📍 Show this to your driver to go directly to our shop</p>
-<p>🚕 Taxi & Grab drivers will understand this:</p>
+  <p>🚕 Taxi & Grab drivers will understand this:</p>
+
   <p style="font-size: 18px;">
     ร้านสมาร์ทแฟชั่นเทเลอร์<br>
     เชียงใหม่ไนท์บาซาร์<br>
@@ -75,5 +102,24 @@
     (Smart Fashion Custom Tailor, Chiang Mai Night Bazaar)
   </p>
 </section>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/66836367660" class="whatsapp">Chat on WhatsApp</a>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Smart Fashion Custom Tailor Chiang Mai</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function copyThaiAddress() {
+  const address = "สมาร์ท แฟชั่น คัสตอม เทเลอร์ ถนนช้างคลาน ใกล้ไนท์บาซาร์ อำเภอเมืองเชียงใหม่ จังหวัดเชียงใหม่";
+  navigator.clipboard.writeText(address).then(function() {
+    alert("Thai address copied! Show this to your taxi driver.");
+  });
+}
+</script>
+
 </body>
 </html>
